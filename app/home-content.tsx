@@ -65,7 +65,7 @@ export default function HomePage() {
         />
       </div>
       {/* باقي الصفحة */}
-    <div className="min-h-screen">
+    <div className="min-h-screen" style={{ backgroundColor: 'transparent' }}>
       {/* Hero Section */}
       <HeroSection />
         {/* Decorative Divider below Hero, always fully visible */}

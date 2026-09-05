@@ -28,8 +28,13 @@ body::before {
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
-  z-index: -1;
+  z-index: 0;
   opacity: 1;
+}
+
+body {
+  position: relative;
+  z-index: 1;
 }
 
 /* Prevent layout shift */
