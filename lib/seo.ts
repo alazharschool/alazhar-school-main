@@ -7,7 +7,7 @@ export const SITE_URL =
 
 export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Al-Azhar School'
 
-export const LOGO_PATH = '/logo/image.png'
+export const LOGO_PATH = '/logo/image.svg'
 
 export const DEFAULT_OG_IMAGE = '/og-image.jpg'
 
