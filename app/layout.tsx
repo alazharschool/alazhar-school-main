@@ -1,6 +1,6 @@
 import type React from 'react'
 import type { Metadata, Viewport } from 'next'
-import { Noto_Sans_Arabic, Noto_Serif } from 'next/font/google'
+import { Amiri, Cairo } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
@@ -13,22 +13,22 @@ import { GoogleAnalytics } from '@/components/google-analytics'
 import { JsonLd, organizationSchema, websiteSchema } from '@/lib/structured-data'
 import { SITE_URL, DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/seo'
 
-const notoSansArabic = Noto_Sans_Arabic({
-  subsets: ['arabic'],
-  weight: ['400', '700', '900'],
-  display: 'swap',
-  preload: true,
-  fallback: ['system-ui', 'arial'],
-  variable: '--font-noto-sans-arabic',
-})
-
-const notoSerif = Noto_Serif({
-  subsets: ['latin'],
-  weight: ['400', '700', '900'],
+const amiri = Amiri({
+  subsets: ['arabic', 'latin'],
+  weight: ['400', '700'],
   display: 'swap',
   preload: true,
   fallback: ['Georgia', 'serif'],
-  variable: '--font-noto-serif',
+  variable: '--font-amiri',
+})
+
+const cairo = Cairo({
+  subsets: ['arabic', 'latin'],
+  weight: ['300', '400', '600', '700'],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial'],
+  variable: '--font-cairo',
 })
 
 export const viewport: Viewport = {
@@ -127,7 +127,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSansArabic.variable} ${notoSerif.variable} ${notoSansArabic.className}`}
+        className={`${amiri.variable} ${cairo.variable}`}
         suppressHydrationWarning
       >
         <a
