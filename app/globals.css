@@ -23,11 +23,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/islamic-background.png");
+  background-image: url("/islamic-pattern-new.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   z-index: -1;
   opacity: 1;
 }
