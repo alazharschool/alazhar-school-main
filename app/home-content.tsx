@@ -91,14 +91,14 @@ export default function HomePage() {
         </div>
         {/* Decorative Divider perfectly centered between Book Now and About Us */}
         <FadeInSection>
-          <section className="py-6 sm:py-8 px-4 section-light" style={{ backgroundImage: 'url(/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+          <section className="py-6 sm:py-8 px-4 section-light" style={{ backgroundImage: 'url(/islamic-pattern-new.svg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
         <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <FadeInSection direction="left">
               <div
                 className="content-overlay"
                 style={{
-                  backgroundImage: 'url(/islamic-pattern-new.jpg)',
+                  backgroundImage: 'url(/islamic-pattern-new.svg)',
                   backgroundSize: 'cover',
                   backgroundRepeat: 'repeat',
                   backgroundPosition: 'center',
@@ -129,7 +129,7 @@ export default function HomePage() {
             <FadeInSection direction="right" delay={300}>
               <div className="relative group" style={{ border: '4px solid #8B4513', borderRadius: '2rem', overflow: 'hidden', boxShadow: '0 12px 48px rgba(0,0,0,0.55)' }}>
                 <Image
-                      src="/OURSTORYPIC.png"
+                      src="/OURSTORYPIC.svg"
                       alt="Our Story - Al-Azhar School"
                   width={600}
                   height={400}
@@ -429,7 +429,7 @@ export default function HomePage() {
                     <CardHeader className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
                       <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-yellow-400 overflow-hidden" style={{ boxShadow: '0 8px 32px 0 #000a, 0 1.5px 0 #fff' }}>
                         <Image
-                          src={idx === 1 ? "/najad-arabic-.jpg" : "/islamicstudy.webp"}
+                          src={idx === 1 ? "/najad-arabic.svg" : "/islamicstudy.svg"}
                           alt={idx === 1 ? "Arabic Language" : "Islamic Studies"}
                           fill
                           className="object-cover"
@@ -582,7 +582,7 @@ export default function HomePage() {
                     Why Choose Us
                   </h2>
                   <Image
-                    src="/question-mark.png"
+                    src="/question-mark.svg"
                     alt="?"
                     width={56}
                     height={56}
