@@ -55,6 +55,17 @@ CREATE TABLE IF NOT EXISTS attendance (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
+-- Create testimonials table
+CREATE TABLE IF NOT EXISTS testimonials (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+  name VARCHAR(255) NOT NULL,
+  content TEXT NOT NULL,
+  rating INTEGER CHECK (rating >= 1 AND rating <= 5),
+  approved BOOLEAN DEFAULT false,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
 -- Create indexes for better performance
 CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);
 CREATE INDEX IF NOT EXISTS idx_users_user_type ON users(user_type);
@@ -68,6 +79,7 @@ ALTER TABLE users ENABLE ROW LEVEL SECURITY;
 ALTER TABLE teachers ENABLE ROW LEVEL SECURITY;
 ALTER TABLE schedules ENABLE ROW LEVEL SECURITY;
 ALTER TABLE attendance ENABLE ROW LEVEL SECURITY;
+ALTER TABLE testimonials ENABLE ROW LEVEL SECURITY;
 
 -- Create RLS policies
 -- Users can view their own data
@@ -97,6 +109,24 @@ CREATE POLICY "Teachers can view their schedules" ON schedules
 -- Students can update attendance for their classes
 CREATE POLICY "Students can update own attendance" ON attendance
   FOR INSERT WITH CHECK (student_id::text = auth.uid()::text);
+
+-- Anyone can view approved testimonials
+CREATE POLICY "Anyone can view approved testimonials" ON testimonials
+  FOR SELECT USING (approved = true);
+
+-- Users can create their own testimonials
+CREATE POLICY "Users can create own testimonials" ON testimonials
+  FOR INSERT WITH CHECK (user_id::text = auth.uid()::text);
+
+-- Admins can update testimonial approval
+CREATE POLICY "Admins can update testimonials" ON testimonials
+  FOR UPDATE USING (
+    EXISTS (
+      SELECT 1 FROM users 
+      WHERE id::text = auth.uid()::text 
+      AND user_type = 'admin'
+    )
+  );
 
 -- Insert sample data
 INSERT INTO teachers (name, email, phone, specialization) VALUES

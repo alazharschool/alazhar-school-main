@@ -5,17 +5,7 @@ type User = Database['public']['Tables']['users']['Row']
 type Schedule = Database['public']['Tables']['schedules']['Row']
 type Teacher = Database['public']['Tables']['teachers']['Row']
 type Attendance = Database['public']['Tables']['attendance']['Row']
-
-// Lightweight type for testimonials to avoid breaking existing Database typing
-export interface Testimonial {
-  id: string
-  user_id: string
-  name: string
-  content: string
-  rating?: number
-  approved?: boolean
-  created_at: string
-}
+export type Testimonial = Database['public']['Tables']['testimonials']['Row']
 
 export interface ScheduleData {
   id: string;
@@ -312,7 +302,7 @@ export const supabaseAPI = {
       console.error('Error fetching testimonials:', error)
       return []
     }
-    return (data as unknown as Testimonial[]) || []
+    return data || []
   },
 
   async createTestimonial(payload: { content: string; rating?: number; name?: string }): Promise<Testimonial | null> {
@@ -330,7 +320,7 @@ export const supabaseAPI = {
 
     const { data, error } = await supabase
       .from('testimonials')
-      .insert(insertPayload as any)
+      .insert(insertPayload)
       .select('*')
       .single()
 
@@ -338,7 +328,7 @@ export const supabaseAPI = {
       console.error('Error creating testimonial:', error)
       throw error
     }
-    return data as unknown as Testimonial
+    return data
   },
 
   async getTestimonials(approved?: boolean): Promise<Testimonial[]> {
@@ -351,7 +341,7 @@ export const supabaseAPI = {
       console.error('Error fetching testimonials:', error)
       return []
     }
-    return (data as unknown as Testimonial[]) || []
+    return data || []
   },
 
   async updateTestimonialApproval(id: string, approved: boolean): Promise<Testimonial> {
@@ -362,7 +352,7 @@ export const supabaseAPI = {
       .select('*')
       .single()
     if (error) throw error
-    return data as unknown as Testimonial
+    return data
   },
 
   async deleteTestimonial(id: string): Promise<void> {
