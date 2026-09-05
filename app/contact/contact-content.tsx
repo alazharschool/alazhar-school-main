@@ -165,15 +165,15 @@ Best regards,
                         <Sparkles className="w-4 h-4 text-white" />
                       </div>
                     </div>
-                    <h1 className="text-5xl md:text-6xl font-bold text-white" style={{ 
-                      backgroundColor: 'rgba(139, 69, 19, 0.1)', 
-                      padding: '20px 40px', 
+                    <h1 className="text-5xl md:text-6xl font-bold text-white" style={{
+                      backgroundColor: 'rgba(139, 69, 19, 0.1)',
+                      padding: '20px 40px',
                       borderRadius: '20px',
                       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 4px 4px 8px rgba(0, 0, 0, 0.6)',
                       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
                       WebkitTextStroke: '1px rgba(139, 69, 19, 0.3)'
                     }}>
-                      Get In Touch
+                      Contact Us - Start Your Journey
                     </h1>
                   </div>
                   <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">

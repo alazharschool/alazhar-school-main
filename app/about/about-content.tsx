@@ -42,7 +42,7 @@ export default function AboutPage() {
                 textShadow: '0 4px 16px #000, 0 2px 8px #000'
               }}
             >
-              About Al-Azhar School
+              About Al-Azhar School - Our Mission & Vision
             </h1>
             <p className="text-sm" style={{
               fontFamily: "Noto Serif",

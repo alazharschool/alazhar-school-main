@@ -89,7 +89,7 @@ export default function HeroSection() {
                     lineHeight: 1.15,
                   }}
                 >
-                  Al-Azhar School
+                  Master Quran Recitation & Arabic with Certified Al-Azhar Tutors
                 </h1>
               </div>
               <style jsx>{`
@@ -150,14 +150,14 @@ export default function HeroSection() {
               <div className="hero-entrance flex justify-center lg:justify-start mt-3 sm:mt-4" style={{ animationDelay: '1.2s' }}>
                 <Link
                   href="/contact"
-                  className="font-black px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-full border transition-all duration-300 hover:scale-102 hover:shadow-xl w-full sm:w-auto flex items-center justify-center text-white"
+                  className="font-black px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-full border transition-all duration-300 hover:scale-102 hover:shadow-xl w-full sm:w-auto flex items-center justify-center"
                   style={{
                     fontFamily: "var(--font-amiri), Amiri, serif",
                     fontWeight: 700,
-                    background: '#d4af37',
-                    color: '#0d1f19',
-                    border: '1.2px solid #d4af37',
-                    boxShadow: '0 4px 16px rgba(212, 175, 55, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1)',
+                    background: '#D4AF37',
+                    color: '#0D1F19',
+                    border: '2px solid #D4AF37',
+                    boxShadow: '0 4px 16px rgba(212, 175, 55, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2)',
                   }}
                 >
                   Book Now

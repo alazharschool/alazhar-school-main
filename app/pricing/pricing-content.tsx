@@ -38,7 +38,7 @@ export default function PricingPage() {
                 boxShadow: '0 8px 32px 0 #5a260088, 0 2px 8px #5a260044'
               }}
             >
-              <div
+              <h1
                 style={{
                   fontSize: '32px',
                   fontFamily: 'Noto Serif',
@@ -52,7 +52,7 @@ export default function PricingPage() {
                 }}
               >
                 Simple, Transparent Pricing
-              </div>
+              </h1>
               <p className="text-sm text-gray-600"
                 style={{ marginTop: '0', marginBottom: '0.2cm', lineHeight: '1.6', color: '#5a2600' }}
               >

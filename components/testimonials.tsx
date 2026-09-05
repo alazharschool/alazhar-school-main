@@ -12,7 +12,7 @@ const staticTestimonials = [
     name: 'Ahmed Ali',
     country: 'USA',
     flag: '🇺🇸',
-    content: 'The Quran Tajweed classes with native Al-Azhar tutors transformed my recitation.',
+    content: 'The Quran Tajweed classes with native Al-Azhar tutors transformed my recitation. My teacher helped me perfect every letter with patience and expertise. Now I can recite with confidence and proper pronunciation.',
     rating: 5,
     created_at: new Date().toISOString()
   },
@@ -21,7 +21,7 @@ const staticTestimonials = [
     name: 'Sarah Johnson',
     country: 'UK',
     flag: '🇬🇧',
-    content: 'Flexible schedules and highly structured Arabic language program.',
+    content: 'Flexible schedules and highly structured Arabic language program. As a working professional, I needed classes that fit my busy schedule. Al-Azhar School delivered perfectly with personalized attention.',
     rating: 5,
     created_at: new Date().toISOString()
   },
@@ -30,7 +30,7 @@ const staticTestimonials = [
     name: 'Maria Rodriguez',
     country: 'Colombia',
     flag: '🇨🇴',
-    content: 'Authentic Islamic education accessible from South America.',
+    content: 'Authentic Islamic education accessible from South America. I never thought I could learn proper Tajweed from home, but the interactive sessions and certified teachers made it possible.',
     rating: 5,
     created_at: new Date().toISOString()
   },
@@ -39,7 +39,7 @@ const staticTestimonials = [
     name: 'Ahmad bin Yusuf',
     country: 'Malaysia',
     flag: '🇲🇾',
-    content: 'Deeply spiritual and academic approach to Hadith and Tajweed.',
+    content: 'Deeply spiritual and academic approach to Hadith and Tajweed. The curriculum balances traditional Islamic scholarship with modern teaching methods. Highly recommended for serious learners.',
     rating: 5,
     created_at: new Date().toISOString()
   }

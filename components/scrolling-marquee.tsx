@@ -5,7 +5,7 @@ const marqueeItems = [
   "The Holy Quran",
   "Islamic Study",
   "Arabic language",
-  "Tajjweed",
+  "Tajweed",
   "Hadith"
 ];
 
