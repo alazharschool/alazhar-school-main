@@ -18,54 +18,8 @@ import TestimonialsSection from "@/components/testimonials";
 export default function HomePage() {
   return (
     <>
-      {/* ديكور صورة القرآن في الخلفية يمين الصفحة */}
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          right: 0,
-          width: "320px",
-          height: "100vh",
-          zIndex: 0,
-          opacity: 0.10,
-          pointerEvents: "none",
-          background: "none"
-        }}
-      >
-        <Image
-          src="/quran_7221480.png"
-          alt=""
-          width={320}
-          height={1080}
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-          draggable={false}
-        />
-      </div>
-      {/* ديكور صورة كتاب في الخلفية يسار الصفحة */}
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "320px",
-          height: "100vh",
-          zIndex: 0,
-          opacity: 0.10,
-          pointerEvents: "none",
-          background: "none"
-        }}
-      >
-        <Image
-          src="/book_13534590.png"
-          alt=""
-          width={320}
-          height={1080}
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-          draggable={false}
-        />
-      </div>
       {/* باقي الصفحة */}
-    <div className="min-h-screen" style={{ backgroundColor: 'transparent' }}>
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
         {/* Decorative Divider below Hero, always fully visible */}
