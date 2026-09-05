@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../__tests__"
+		},
+		{
+			"path": "../app"
+		},
+		{
+			"path": "../components"
+		},
+		{
+			"path": "../contexts"
+		},
+		{
+			"path": "../e2e"
+		},
+		{
+			"path": "../hooks"
+		},
+		{
+			"path": "../lib"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../styles"
+		}
+	]
+}
