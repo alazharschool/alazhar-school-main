@@ -81,11 +81,11 @@ export default function HeroSection() {
                 <h1
                   className="hero-main-title text-center lg:text-left text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black"
                   style={{
-                    fontFamily: 'Noto Serif',
-                    fontWeight: 900,
-                    color: '#ffb800',
+                    fontFamily: 'var(--font-amiri), Amiri, serif',
+                    fontWeight: 700,
+                    color: '#d4af37',
                     letterSpacing: '0.05em',
-                    textShadow: '0 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 184, 0, 0.2)',
+                    textShadow: '0 2px 8px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.3)',
                     lineHeight: 1.15,
                   }}
                 >
@@ -104,12 +104,12 @@ export default function HeroSection() {
               {/* Subheading */}
               <div className="hero-entrance" style={{ animationDelay: '1.0s' }}>
                 <p
-                  className="text-sm sm:text-base md:text-lg text-gray-800 leading-relaxed max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
+                  className="text-sm sm:text-base md:text-lg text-[#f8fafc] leading-relaxed max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
                   style={{
-                    fontFamily: "Tajawal, Cairo, Noto Serif, serif",
-                    fontWeight: 500,
+                    fontFamily: "var(--font-cairo), Cairo, sans-serif",
+                    fontWeight: 400,
                     letterSpacing: "0.01em",
-                    textShadow: "0 1px 3px rgba(255, 255, 255, 0.9)",
+                    textShadow: "0 1px 3px rgba(0, 0, 0, 0.5)",
                     lineHeight: 1.7,
                   }}
                 >
@@ -152,12 +152,12 @@ export default function HeroSection() {
                   href="/contact"
                   className="font-black px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-full border transition-all duration-300 hover:scale-102 hover:shadow-xl w-full sm:w-auto flex items-center justify-center text-white"
                   style={{
-                    fontFamily: "Noto Serif",
-                    fontWeight: 900,
-                    background: '#ffb300',
-                    color: '#fff',
-                    border: '1.2px solid #8B4513',
-                    boxShadow: '0 4px 16px rgba(139, 69, 19, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1)',
+                    fontFamily: "var(--font-amiri), Amiri, serif",
+                    fontWeight: 700,
+                    background: '#d4af37',
+                    color: '#0d1f19',
+                    border: '1.2px solid #d4af37',
+                    boxShadow: '0 4px 16px rgba(212, 175, 55, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1)',
                   }}
                 >
                   Book Now
@@ -195,10 +195,10 @@ export default function HeroSection() {
               <span
                 className="hero-subtitle block text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-center mt-3 sm:mt-4 hero-entrance"
                 style={{
-                  fontFamily: 'Noto Serif',
-                  color: '#e8b007',
-                  WebkitTextStroke: '0.8px #000',
-                  textShadow: '0 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(232, 176, 7, 0.3)',
+                  fontFamily: 'var(--font-amiri), Amiri, serif',
+                  color: '#d4af37',
+                  WebkitTextStroke: '0.8px #0d1f19',
+                  textShadow: '0 2px 8px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.3)',
                   letterSpacing: '0.05em',
                   whiteSpace: 'normal',
                   margin: '0 0 8px 0',

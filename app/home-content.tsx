@@ -102,15 +102,15 @@ export default function HomePage() {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'repeat',
                   backgroundPosition: 'center',
-                  border: '4px solid #8B4513',
+                  border: '4px solid #d4af37',
                   borderRadius: '2rem',
                   padding: '2rem',
-                  backgroundColor: 'white',
-                  boxShadow: '0 12px 48px rgba(0,0,0,0.55)'
+                  backgroundColor: 'rgba(13, 31, 25, 0.95)',
+                  boxShadow: '0 12px 48px rgba(212, 175, 55, 0.3)'
                 }}
               >
-                    <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">Our Story</h2>
-                    <div className="space-y-2 text-xs sm:text-sm text-gray-600">
+                    <h2 className="text-lg sm:text-xl font-bold text-[#d4af37] mb-4 sm:mb-6" style={{ fontFamily: 'var(--font-amiri), Amiri, serif' }}>Our Story</h2>
+                    <div className="space-y-2 text-xs sm:text-sm text-[#f8fafc]">
                   <p>
                     <strong>Assalam Alikum!</strong> We're an international, non-profit Egyptian Islamic school with one heartfelt mission: helping Muslim children truly love and understand their faith.
                   </p>
@@ -127,7 +127,7 @@ export default function HomePage() {
               </div>
             </FadeInSection>
             <FadeInSection direction="right" delay={300}>
-              <div className="relative group" style={{ border: '4px solid #8B4513', borderRadius: '2rem', overflow: 'hidden', boxShadow: '0 12px 48px rgba(0,0,0,0.55)' }}>
+              <div className="relative group" style={{ border: '4px solid #d4af37', borderRadius: '2rem', overflow: 'hidden', boxShadow: '0 12px 48px rgba(212, 175, 55, 0.3)' }}>
                 <Image
                       src="/OURSTORYPIC.svg"
                       alt="Our Story - Al-Azhar School"
@@ -206,8 +206,8 @@ export default function HomePage() {
                           display: 'inline-block',
                           fontSize: '15px',
                           letterSpacing: '0.5px',
-                          border: '1.2px solid #8B4513',
-                          boxShadow: '0 6px 24px 0 #000b',
+                          border: '1.2px solid #d4af37',
+                          boxShadow: '0 6px 24px 0 rgba(212, 175, 55, 0.3)',
                       }}
                     >
                       Book Now
@@ -284,8 +284,8 @@ export default function HomePage() {
                           display: 'inline-block',
                           fontSize: '15px',
                           letterSpacing: '0.5px',
-                          border: '1.2px solid #8B4513',
-                          boxShadow: '0 6px 24px 0 #000b',
+                          border: '1.2px solid #d4af37',
+                          boxShadow: '0 6px 24px 0 rgba(212, 175, 55, 0.3)',
                         }}
                     >
                       Book Now
@@ -360,8 +360,8 @@ export default function HomePage() {
                           display: 'inline-block',
                           fontSize: '15px',
                           letterSpacing: '0.5px',
-                          border: '1.2px solid #8B4513',
-                          boxShadow: '0 6px 24px 0 #000b',
+                          border: '1.2px solid #d4af37',
+                          boxShadow: '0 6px 24px 0 rgba(212, 175, 55, 0.3)',
                         }}
                     >
                       Book Now
@@ -378,7 +378,7 @@ export default function HomePage() {
                 style={{ animationDelay: `${idx * 120}ms` }}
               >
                 <Card
-                  className="h-full min-h-[420px] w-full border-2 border-[#8B4513] transition-all duration-300 bg-white flex flex-col items-stretch justify-between overflow-hidden shadow-[0_6px_32px_rgba(0,0,0,0.5)] hover:shadow-black/70 hover:scale-105"
+                  className="h-full min-h-[420px] w-full border-2 border-[#d4af37] transition-all duration-300 bg-[#0d1f19]/95 flex flex-col items-stretch justify-between overflow-hidden shadow-[0_6px_32px_rgba(212, 175, 55, 0.3)] hover:shadow-[0_8px_40px_rgba(212, 175, 55, 0.4)] hover:scale-105"
                   style={{
                     borderRadius: '2rem',
                     display: 'flex',
@@ -387,10 +387,10 @@ export default function HomePage() {
                     alignItems: 'stretch'
                   }}
                 >
-                    <CardHeader className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
-                        <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-yellow-400 overflow-hidden" style={{ boxShadow: '0 8px 32px 0 #000a, 0 1.5px 0 #fff' }}>
+                    <CardHeader className="bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/10 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
+                        <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-[#d4af37] overflow-hidden" style={{ boxShadow: '0 8px 32px 0 rgba(212, 175, 55, 0.2)' }}>
                           <Image
-                            src="/quranbook.avif"
+                            src="/quranbook.svg"
                             alt="Quran Memorization"
                             fill
                             className="object-cover"
@@ -404,7 +404,7 @@ export default function HomePage() {
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col justify-between h-full p-6">
-                        <div>{title}</div>
+                        <div className="text-[#d4af37]">{title}</div>
                         <div className="mt-auto">{extra}</div>
                       </CardContent>
                     </Card>
@@ -417,7 +417,7 @@ export default function HomePage() {
                   style={{ animationDelay: `${idx * 120}ms` }}
                 >
                   <Card
-                    className="h-full min-h-[420px] w-full border-2 border-[#8B4513] transition-all duration-300 bg-white flex flex-col items-stretch justify-between overflow-hidden shadow-[0_6px_32px_rgba(0,0,0,0.5)] hover:shadow-black/70 hover:scale-105"
+                    className="h-full min-h-[420px] w-full border-2 border-[#d4af37] transition-all duration-300 bg-[#0d1f19]/95 flex flex-col items-stretch justify-between overflow-hidden shadow-[0_6px_32px_rgba(212, 175, 55, 0.3)] hover:shadow-[0_8px_40px_rgba(212, 175, 55, 0.4)] hover:scale-105"
                     style={{
                       borderRadius: '2rem',
                       display: 'flex',
@@ -426,8 +426,8 @@ export default function HomePage() {
                       alignItems: 'stretch'
                     }}
                   >
-                    <CardHeader className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
-                      <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-yellow-400 overflow-hidden" style={{ boxShadow: '0 8px 32px 0 #000a, 0 1.5px 0 #fff' }}>
+                    <CardHeader className="bg-gradient-to-br from-[#d4af37]/20 to-[#d4af37]/10 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
+                      <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-[#d4af37] overflow-hidden" style={{ boxShadow: '0 8px 32px 0 rgba(212, 175, 55, 0.2)' }}>
                         <Image
                           src={idx === 1 ? "/najad-arabic.svg" : "/islamicstudy.svg"}
                           alt={idx === 1 ? "Arabic Language" : "Islamic Studies"}
