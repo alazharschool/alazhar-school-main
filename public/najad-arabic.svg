@@ -1,8 +1,0 @@
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="300" fill="#F5F5DC"/>
-  <circle cx="200" cy="150" r="100" fill="#DAA520" opacity="0.3"/>
-  <text x="200" y="140" text-anchor="middle" font-family="serif" font-size="32" fill="#8B4513" font-weight="bold">اللغة</text>
-  <text x="200" y="180" text-anchor="middle" font-family="serif" font-size="24" fill="#5a2600">العربية</text>
-  <text x="200" y="220" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#8B4513">Arabic Language</text>
-  <path d="M100 250 L300 250" stroke="#DAA520" stroke-width="3"/>
-</svg>

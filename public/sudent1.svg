@@ -1,7 +1,0 @@
-<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="80" cy="80" r="75" fill="#F5F5DC" stroke="#DAA520" stroke-width="4"/>
-  <circle cx="80" cy="55" r="25" fill="#8B4513"/>
-  <path d="M40 130 Q80 90 120 130" fill="#5a2600"/>
-  <rect x="55" y="85" width="50" height="45" rx="5" fill="#8B4513"/>
-  <text x="80" y="145" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#F5F5DC" font-weight="bold">Student</text>
-</svg>
