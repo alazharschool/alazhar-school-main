@@ -35,10 +35,10 @@ const Navigation = React.memo(function Navigation() {
   return (
     <nav className="nav-enhanced sticky top-0 z-50 shadow-premium bg-white/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16 md:h-16">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-1 sm:space-x-2 md:space-x-3 group">
-            <div className="flex items-center space-x-1 sm:space-x-2">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 group">
+            <div className="flex items-center space-x-2">
               <div className="logo-container flex items-center justify-center transition-all duration-300 group-hover:scale-110 min-w-[48px] sm:min-w-[64px] md:min-w-[72px]">
                 <Image
                   src={LOGO_PATH}
@@ -52,11 +52,12 @@ const Navigation = React.memo(function Navigation() {
               </div>
             </div>
             <span
-              className="brand-text text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black group-hover:text-yellow-600 transition-colors duration-300"
+              className="brand-text text-sm sm:text-base md:text-lg lg:text-xl font-black group-hover:text-yellow-600 transition-colors duration-300"
               style={{ 
                 fontWeight: 900,
                 textShadow: '0 8px 32px #000000cc, 0 4px 16px #00000099, 0 2px 8px #00000066, 0 1px 2px #00000044',
-                WebkitTextStroke: '1.2px #fff'
+                WebkitTextStroke: '1.2px #fff',
+                lineHeight: 1.2
               }}
             >
               <span style={{ color: '#5a2600', fontWeight: 900 }}>Al-Azhar </span>
@@ -79,12 +80,12 @@ const Navigation = React.memo(function Navigation() {
           `}</style>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm xl:text-base font-bold text-[#5a2600] hover:text-yellow-700 transition-all duration-100 hover:scale-105 relative group"
+                className="text-sm xl:text-base font-bold text-[#5a2600] hover:text-yellow-700 transition-all duration-200 hover:scale-105 relative group px-2"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-600 transition-all duration-300 group-hover:w-full"></span>
