@@ -24,7 +24,7 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#f8f3eb] relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
       {/* Subtle radial glow behind logo */}
       <div 
         className="hero-radial-glow hidden lg:block"
@@ -38,10 +38,6 @@ export default function HeroSection() {
       <main
         className="relative z-10 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:py-20 overflow-visible"
         style={{
-          backgroundImage: "url('/islamic-pattern-new.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
           minHeight: "100vh",
         }}
       >

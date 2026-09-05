@@ -91,7 +91,7 @@ export default function HomePage() {
         </div>
         {/* Decorative Divider perfectly centered between Book Now and About Us */}
         <FadeInSection>
-          <section className="py-6 sm:py-8 px-4 section-light" style={{ backgroundImage: 'url(/islamic-pattern-new.svg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+          <section className="py-6 sm:py-8 px-4 section-light">
         <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <FadeInSection direction="left">
